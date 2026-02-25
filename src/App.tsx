@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { peopleFromServer } from './data/people';
-import { Autocomplete } from './components/Autocomplete';
+import { PeopleAutocomplete } from './components/PeopleAutocomplete';
 import { Person } from './types/Person';
 import './App.scss';
 
@@ -20,7 +20,10 @@ export const App: React.FC = () => {
             : 'No selected person'}
         </h1>
 
-        <Autocomplete people={peopleFromServer} onSelected={handleSelect} />
+        <PeopleAutocomplete
+          people={peopleFromServer}
+          onSelected={handleSelect}
+        />
       </main>
     </div>
   );
