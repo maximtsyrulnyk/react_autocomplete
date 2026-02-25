@@ -20,10 +20,7 @@ export const App: React.FC = () => {
             : 'No selected person'}
         </h1>
 
-        <Autocomplete
-          people={peopleFromServer}
-          onSelected={handleSelect}
-        />
+        <Autocomplete people={peopleFromServer} onSelected={handleSelect} />
       </main>
     </div>
   );
