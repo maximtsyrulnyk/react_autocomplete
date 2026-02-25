@@ -7,7 +7,7 @@ interface Props {
   delay?: number;
 }
 
-export const PeopleAutocomplete: React.FC<Props> = ({
+export const Autocomplete: React.FC<Props> = ({
   people,
   onSelected,
   delay = 300,
